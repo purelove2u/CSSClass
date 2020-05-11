@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성 선택자</title>
+    <style>
+      /* [href] {
+        text-decoration: none;
+        color: black;
+      } */
+      [target] {
+        text-decoration: none;
+      }
+      [target="_blank"] {
+        /* text-decoration: none; */
+        background-color: burlywood;
+        color: black;
+      }
+      [target="_self"] {
+        /* text-decoration: none; */
+        background-color: red;
+        color: white;
+      }
+      /* .link1,
+      .link2 {
+        list-style-type: none;
+      }   효과가 적용되지 않음 이런 경우에 가상클래스가 필요*/
+    </style>
+  </head>
+  <body>
+    <h1>css 기본문법</h1>
+    <h2>속성 선택자</h2>
+    <ul>
+      <li><a href="#" target="_blank" class="link1">google</a></li>
+      <li><a href="#" target="_blank" class="link1">daum</a></li>
+      <li><a href="#" target="_self" class="link2">naver</a></li>
+    </ul>
+  </body>
+</html>
