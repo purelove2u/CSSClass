@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        height: 300px;
+      }
       .section2 {
         background-image: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg");
+        background-position: right bottom;
+        background-attachment: fixed;
+      }
+      .section3 {
+        background-image: url("https://www.starbucks.co.kr/common/img/main/reserve_bg.jpg");
+        background-position: right bottom;
+        background-attachment: fixed;
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <section class="section1"></section>
+    <section class="section2"></section>
+    <section class="section3"></section>
+    <section class="section4"></section>
+    <section class="section5"></section>
+  </body>
 </html>
+
+<!-- semantic 태그
+<header></header>     : 로고, 메뉴, 검색바
+<nav></nav>           : 
+<section></section>   : 
+<article></article>   : 독립적으로 구분되거나 재사용 가능한 영역
+<aside></aside>       : 
+<footer></footer>     : 회사의 위치, 주소, 저작권정보 등
+<main></main>         : 문서 내부의 핵심적인 컨텐츠를 담고 있는 영역 -->
