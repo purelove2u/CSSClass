@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ccc;
+        line-height: 60px;
+      }
+      header h1 {
+        margin-left: 20px;
+        float: left;
+        /* line-height: 60px; */
+        /* display: inline-block; */
+      }
+      a {
+        color: black;
+      }
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      header nav {
+        float: right;
+        /* line-height: 60px; */
+      }
+      header nav ul li {
+        /* float: left; */
+        display: inline-block;
+        list-style: none;
+        margin-left: 20px;
+      }
+      .clearfix::after {
+        content: " ";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1><a href="#">Logo</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Member Join</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
