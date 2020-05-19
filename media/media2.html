@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        order: 2;
+        background-color: white;
+        padding: 25px;
+      }
+      .flexbg .sidebar {
+        padding: 25px;
+        width: 20%;
+        color: white;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+      /* 태블릿 화면 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg .main {
+          order: 1;
+          width: 100%;
+        }
+        .flexbg .left {
+          order: 2;
+          width: 50%;
+        }
+        .flexbg .right {
+          order: 3;
+          width: 50%;
+        }
+      }
+
+      /* 모바일 화면 */
+      @media screen and (max-width: 500px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          asperiores ratione adipisci soluta. Totam odit consequuntur iusto hic
+          id animi maxime ipsum nulla perferendis, perspiciatis magni voluptas
+          consequatur iste accusamus. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quia totam eaque porro maxime itaque repellat
+          consequatur aspernatur quisquam eligendi sed sint, distinctio id
+          placeat recusandae? Minima suscipit nisi ipsam fugiat quisquam. Quos
+          illo ab corrupti quia fuga placeat sit quod ullam! Quo odio neque
+          illum, est dolor reiciendis facere vel, veniam ea porro cumque nostrum
+          deleniti officia alias voluptatem illo nam nobis repudiandae sint amet
+          odit quidem magni molestiae ratione. Reiciendis dolorum fugit iure
+          expedita neque, voluptates reiciendis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          laudantium ad autem, cupiditate aperiam soluta perspiciatis omnis
+          minus quia quo odio! Magni eum animi neque molestiae alias error
+          corporis dolorum! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ullam voluptates ratione, reprehenderit quis eligendi adipisci
+          odit. Illo quisquam necessitatibus recusandae temporibus repellendus
+          ea maxime velit quidem pariatur culpa perspiciatis maiores praesentium
+          consequatur, facilis eos saepe. Et tempora libero consequuntur
+          doloremque rem eligendi cum aliquam illum iusto labore sed optio sunt,
+          quos consequatur fugiat. Sit odio quo nulla, tenetur doloribus
+          inventore quis voluptas numquam suscipit. Enim, soluta! Cupiditate at
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          You might have some lastest posts here on the left
+        </p>
+      </aside>
+      <aside class="sidebar right">
+        <p>
+          You might have some lastest posts here on the right
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- cdn방식 css -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main-nav .menu {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #eeeeee;
+        list-style: none;
+        padding-left: 0;
+        height: 60px;
+      }
+      .main-nav .menu li {
+        padding: 4px;
+        padding-top: 14px;
+      }
+      .main-nav .fa,
+      .main-nav .fas,
+      .main-nav .fab {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+      }
+      .main-nav .menu-text {
+        display: inline-block;
+      }
+      .main-nav a {
+        text-decoration: none;
+        color: black;
+      }
+      .main-nav h4,
+      .main-nav p {
+        margin: 0;
+      }
+      .main-nav p {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul class="menu">
+        <li class="menu-home">
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+            <div class="menu-text">
+              <h4>HOME</h4>
+              <p>Start Here</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-products">
+          <a href="#">
+            <i class="fas fa-shopping-basket"></i>
+            <div class="menu-text">
+              <h4>PRODUCTS</h4>
+              <p>Shop Now</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-blog">
+          <a href="#">
+            <i class="fa fa-pencil-alt"></i>
+            <div class="menu-text">
+              <h4>BLOG</h4>
+              <p>My Thoughts</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-contact">
+          <a href="#">
+            <i class="fas fa-phone"></i>
+            <div class="menu-text">
+              <h4>CONTACT</h4>
+              <p>Get in Touch</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
